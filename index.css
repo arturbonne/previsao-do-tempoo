@@ -7,3 +7,8 @@
 body{
     background-color: rgb(16, 125, 241);
 }
+h1{
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
