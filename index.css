@@ -40,3 +40,10 @@ body{
     margin-bottom: 20px;
     height: 30px;
 }
+
+/*
+display flex: define um contêiner flexível e que ele controla o layout dos seus itens filhos
+justify-content: center: alinha os itens ao centro horizontalmente
+flex direction: column: organiza os itens em uma coluna vertical
+margin-top: auto: empurra a barra de busca para o final do contêiner    
+margin-bottom: 20px: adiciona um espaço de 20 pixels abaixo da barra de busca 
