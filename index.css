@@ -8,23 +8,35 @@ body{
     background-color: rgb(16, 125, 241);
 }
 
-/* Estilo do container */
+/* Container principal */
 #container{
-    border: solid rgb(255, 0, 0);
     width: 500px;
     height: 400px;
-    margin: auto;
+    margin: 100px auto; 
+    border: solid red;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+/* Título */
 #container h1{
     color: white;
-    text-align: center;
     margin-top: 20px;
 }
+
+/* Parágrafo */
 #container p{
     color: white;
-    text-align: center;
     margin-top: 10px;
 }
 
-/* Estilo da barra de busca */
-
+/* Barra de busca */
+#buscarbar{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 20px;
+    height: 30px;
+}
