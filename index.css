@@ -6,7 +6,12 @@
 
 body{
     background-color: rgb(20, 81, 146);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
+
 
 /* Container principal */
 #container{
@@ -16,6 +21,7 @@ body{
     border: solid red;
     display: flex;
     flex-direction: column;
+    gap: 5px;
     align-items: center;
 }
 
@@ -29,20 +35,21 @@ body{
 #container p{
     color: white;
     margin-top: 10px;
+    padding: 0 20px;
 }
-
+ 
 /* Barra de busca */
 #buscarbar{
+    height: 25px;
+    width: 20px;
     display: flex;
     justify-content: center;
-    height: 35px;
-    margin-top: 20px;
-    border-radius: 8px;
+    gap: 10px;
 }
 
 #buscarBtn{
-    height: 35px;
-    width: 80px;
+    height: 55px;
+    width: auto;
     color: white;
     border: none;
     cursor: pointer;
@@ -62,17 +69,19 @@ body{
       }
 
 /* status */
-#status{
-    display: flex;
-   justify-content: center;
-    align-items: center;
-    margin-top: auto;
+#resultado{
+    color: white;
+    font-size: 18px;    
     border: solid red;
-    width: 300px;
-    height: 200px;
+    padding: 50px;
+    margin-top: 600px;
+    display: flex;
+    justify-content: center;
 }
-#status 
-
+#resultado h2{
+   margin-top: 10px;
+   text-align: center;
+}
 
 /*
 display flex: define um contêiner flexível e que ele controla o layout dos seus itens filhos
