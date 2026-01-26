@@ -10,8 +10,8 @@ body{
 
 /* Container principal */
 #container{
-    width: 500px;
-    height: 400px;
+    width:  800px;
+    height: 600px;
     margin: 100px auto; 
     border: solid red;
 
@@ -36,9 +36,8 @@ body{
 #buscarbar{
     display: flex;
     justify-content: center;
-    margin-top: auto;
-    margin-bottom: 20px;
-    height: 30px;
+    height: 35px;
+    margin-top: 20px;
 }
 
 /*
@@ -47,3 +46,4 @@ justify-content: center: alinha os itens ao centro horizontalmente
 flex direction: column: organiza os itens em uma coluna vertical
 margin-top: auto: empurra a barra de busca para o final do contêiner    
 margin-bottom: 20px: adiciona um espaço de 20 pixels abaixo da barra de busca 
+margin apenas funciona apenas quando se coloca pixel menor que o container possui
