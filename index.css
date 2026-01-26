@@ -5,16 +5,15 @@
 }
 
 body{
-    background-color: rgb(16, 125, 241);
+    background-color: rgb(20, 81, 146);
 }
 
 /* Container principal */
 #container{
-    width:  800px;
-    height: 600px;
-    margin: 100px auto; 
+    width:  900px;
+    height: 900px;
+    margin: auto; 
     border: solid red;
-
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -38,6 +37,37 @@ body{
     justify-content: center;
     height: 35px;
     margin-top: 20px;
+    border-radius: 8px;
+}
+
+#buscarBtn{
+    height: 35px;
+    width: 80px;
+    color: white;
+    border: none;
+    cursor: pointer;
+    background: rgba(17, 101, 227, 0.7);
+    border: 1px solid rgba(255, 255, 255, 0.8);
+   border-radius: 8px;
+   backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.5s;
+}
+
+#buscarBtn:hover {
+    background: rgba(114, 39, 255, 0.35);
+    border: 1.5px solid #ffffff;
+      }
+
+/* status */
+#status{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: auto;
+    margin-bottom: 20px;
 }
 
 /*
@@ -47,3 +77,6 @@ flex direction: column: organiza os itens em uma coluna vertical
 margin-top: auto: empurra a barra de busca para o final do contêiner    
 margin-bottom: 20px: adiciona um espaço de 20 pixels abaixo da barra de busca 
 margin apenas funciona apenas quando se coloca pixel menor que o container possui
+padding apenas funciona para aumentar o tamanho do elemento sem alterar o tamanho do container
+hover para fazer a interação do mouse com o botão
+*/  
