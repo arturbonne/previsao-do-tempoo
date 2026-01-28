@@ -47,7 +47,6 @@ body{
 }
 
 #cidadeInput{
-    width:auto;
     height: 35px;
     padding: 5px;
     border: none;
@@ -80,17 +79,18 @@ body{
     color: white;
     font-size: 18px;    
     border: solid red;
+
     display: flex;
-    justify-content: center;
     align-items: flex-start;
+    justify-content: center;
+
     margin-top: 40px;
-    width: auto;
-    height: auto;
+    width: 600px;
+    height: 600px;
 }
 #resultado h2{
  text-align: center;
- width: 500px;
- height: 500px;
+
 }
 
 /*
