@@ -78,30 +78,38 @@ body{
 #resultado{
     color: white;
     font-size: 18px;    
-    border: solid red;
+    border: 2px solid red;
 
     display: flex;
-    align-items: flex-start;
-    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     margin-top: 40px;
     width: 800px;
     height: 800px;
-    gap: 20px;
 }
-#resultado h2{
- text-align: center;
-}
-#resultado img{
-
-align-items: end;
-gap: 40px;
-padding: 30px;
-
-background-image: none;
-
+#resultado h2{ 
+  margin-bottom: 20px;
+  text-align: center;
 }
 
+.grid-info {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  width: 100%;
+  justify-items: center;
+}
+
+
+.icones {
+width: 90px;
+height: auto;
+padding: 10px;
+
+border: solid white;
+}
 
 /*
 display flex: define um contêiner flexível e que ele controla o layout dos seus itens filhos
@@ -112,3 +120,7 @@ margin-bottom: 20px: adiciona um espaço de 20 pixels abaixo da barra de busca
 margin apenas funciona apenas quando se coloca pixel menor que o container possui
 padding apenas funciona para aumentar o tamanho do elemento sem alterar o tamanho do container
 hover para fazer a interação do mouse com o botão
+para mexer na altura/largura não é pelo container principal, e sim pelo elemento que está dentro do container
+height:auto faz com que a altura se ajuste automaticamente ao conteúdo do elemento
+width:auto faz com que a largura se ajuste automaticamente ao conteúdo do elemento
+*/
