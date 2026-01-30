@@ -5,7 +5,7 @@
 }
 
 body{
-    background-color: rgb(20, 81, 146);
+    background-color: rgb(26, 108, 196);
 }
 
 
@@ -63,7 +63,7 @@ body{
     color: white;
     border: none;
     cursor: pointer;
-    background: rgba(17, 101, 227, 0.7);
+    background: rgba(7, 79, 187, 0.817);
     border: 1px solid rgba(255, 255, 255, 0.8);
    border-radius: 8px;
    backdrop-filter: blur(4px);
@@ -80,10 +80,10 @@ body{
 
 /* status */
 #resultado{
-    color: white;
     font-size: 18px;    
     border: 2px solid red;
     border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.572);
 
     display: flex;
     align-items: center;
@@ -97,6 +97,7 @@ body{
 #resultado h2{ 
   margin-bottom: 20px;
   text-align: center;
+  padding: 4px;
 }
 
 .grid-info {
@@ -118,7 +119,7 @@ body{
 
     padding: 6px 5px;
 
-    border: 2px solid rgba(43, 0, 255, 0.4);
+    border: 2px solid rgba(82, 49, 250, 0.792);
     border-radius: 20px;
 }
 
@@ -133,15 +134,13 @@ padding: 10px;
     color: white;
     font-size: 16px;
     margin-bottom: 5px;
-   
-   
 
 }
 
-
-
 #temperatura{
     border: solid rgb(255, 0, 217);
+    background: #1a6eff8d;
+
     width: 400px;
     height: 200px;
     border-radius: 40px;
