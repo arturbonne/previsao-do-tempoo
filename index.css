@@ -113,8 +113,13 @@ body{
 .icones{
     display: flex;
     align-items: center;
-    gap: 5px;
-    
+    gap: 2px;
+    text-align: start;
+
+    padding: 6px 5px;
+
+    border: 2px solid rgba(43, 0, 255, 0.4);
+    border-radius: 20px;
 }
 
 .icones img{
@@ -122,11 +127,9 @@ width: 90px;
 height: auto;
 padding: 10px;
 
-
-border: solid white;
 }
 
- .status p{
+ .status {
     color: white;
     font-size: 16px;
     margin-bottom: 5px;
