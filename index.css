@@ -15,7 +15,11 @@ body{
     width:  950px;
     height: 950px;
     margin: auto; 
+
     border: solid red;
+     border-radius: 40px;
+
+
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -79,6 +83,7 @@ body{
     color: white;
     font-size: 18px;    
     border: 2px solid red;
+    border-radius: 40px;
 
     display: flex;
     align-items: center;
@@ -86,7 +91,7 @@ body{
 
     
     width: 800px;
-    height: 800px;
+    height: 700px;
     
 }
 #resultado h2{ 
@@ -136,6 +141,7 @@ border: solid white;
     border: solid rgb(255, 0, 217);
     width: 400px;
     height: 200px;
+    border-radius: 40px;
 
     display: flex;
     
