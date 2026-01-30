@@ -98,20 +98,24 @@ body{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 90px;
+  justify-content: center;
 
-  width: 100%;
-                                                      
-  margin-top: 250px;
+  width: 100%;                                     
+  margin-top: 300px;
   
 }
 
+.icones{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    
+}
 
 .icones img{
 width: 90px;
 height: auto;
 padding: 10px;
-justify-content: flex-start;
-margin-right: 200px;
 
 
 border: solid white;
@@ -120,8 +124,8 @@ border: solid white;
  .status p{
     color: white;
     font-size: 16px;
-    margin-bottom: 10px;
-    text-align: center;
+    margin-bottom: 5px;
+   
    
 
 }
