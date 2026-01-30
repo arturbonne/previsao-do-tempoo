@@ -84,9 +84,10 @@ body{
     align-items: center;
     flex-direction: column;
 
-    margin-top: 40px;
+    
     width: 800px;
     height: 800px;
+    
 }
 #resultado h2{ 
   margin-bottom: 20px;
@@ -96,19 +97,45 @@ body{
 .grid-info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 90px;
 
   width: 100%;
-  justify-items: center;
+                                                      
+  margin-top: 250px;
+  
 }
 
 
-.icones {
+.icones img{
 width: 90px;
 height: auto;
 padding: 10px;
+justify-content: flex-start;
+margin-right: 200px;
+
 
 border: solid white;
+}
+
+ .status p{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+    text-align: center;
+   
+
+}
+
+
+
+#temperatura{
+    border: solid rgb(255, 0, 217);
+    width: 400px;
+    height: 200px;
+
+    display: flex;
+    
+    padding: 10px;
 }
 
 /*
