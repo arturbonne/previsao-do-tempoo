@@ -138,7 +138,7 @@ padding: 10px;
     margin-bottom: 5px;
 }
 
-#temperatura{
+#TempAtualContainer{
     border: solid rgb(255, 0, 217);
     border-radius: 40px;
     background: #1a6eff8d;
@@ -147,8 +147,16 @@ padding: 10px;
     height: 200px;
 
     display: flex;
+    align-items: center;
+    flex-direction: column;
     
     padding: 10px;
+}
+#TempAtualContainer p {
+    color: white;
+    font-size: 20px;
+
+    text-align: center;
 }
 
 /*
