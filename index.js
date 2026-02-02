@@ -11,6 +11,9 @@ const tempAtual = document.getElementById('tempAtual');
 // Evento de clique no botão Buscar
 buscarBtn.addEventListener('click', () => {
 
+// Colocar texto de cidade digitada
+cidadeInput.addEventListener
+
 // Mudar texto da  cidade
 cidadeNome.innerText = 'São Paulo';
 
@@ -20,8 +23,7 @@ tempMin.innerText = 16;
 tempMax.innerText = 26;
 umidade.innerText = 78;
 vento.innerText = 15;
-
-clima.textContent = 'Ensolarado';
+clima.innerText = 'Ensolarado';
 tempAtual.innerText = 22 + '°C';
 
 });
