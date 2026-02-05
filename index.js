@@ -12,29 +12,40 @@ const tempMax= document.getElementById('tempMax');
 const clima = document.getElementById('clima');
 const tempAtual = document.getElementById('tempAtual');
 
+const resultado = document.getElementById('resultado');
+
 // Evento de clique no botão Buscar
 buscarBtn.addEventListener('click', () => {
 
 // Colocar texto de cidade digitada
 const cidadeDigitada = cidadeInput.value.trim();
 
-// Mudar texto da  cidade
 
+// Verificar se o campo está vazio
 if (cidadeDigitada === '') {
-    cidadeNome.innerText = 'Digite o nome de uma cidade';
-    return;
-}  
+    
+// Limpar o campo de entrada
+resultado.style.display = 'none';
+return;
+}
 
-if (cidadeDigitada.toLowerCase() === 'londres') {
-    cidadeNome.innerText = 'Londres';
-    tempMin.innerText = 7;
-    tempMax.innerText = 15;
-    umidade.innerText = 81;
-    vento.innerText = 10;
-    clima.innerText = 'Nublado';
-    tempAtual.innerText = '11 °C';
-    return;
-}  
+// Mostrar tela denovo
+resultado.style.display = 'flex';
+
+// Tela de loading
+loading.style.display = 'block';
+
+// Esconder resultado enquanto carrega
+resultado.style.display = 'none';
+
+// Simular tempo de carregamento
+setTimeout(() => {
+
+// Esconder tela de loading
+loading.style.display = 'none';
+
+//mostrar resultado
+resultado.style.display = 'flex';
 
 // Mudar status da tela
 cidadeNome.innerText = cidadeDigitada;
@@ -48,4 +59,14 @@ vento.innerText = 15;
 clima.innerText = 'Ensolarado';
 tempAtual.innerText = '22 °C';
 
+
+}, 2000); // Simular 2 segundos de carregamento
+
+});
+
+// Botão Enter
+cidadeInput.addEventListener('keydown', (event) => {
+    if (event.key === 'Enter') {
+        buscarBtn.click();
+    }
 });

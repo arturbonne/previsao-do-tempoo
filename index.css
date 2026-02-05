@@ -161,6 +161,14 @@ padding: 10px;
     text-align: center;
 }
 
+#loading {
+    display: none;
+    text-align: center;
+    
+    font-size: 20px;
+    margin-top: 20px;
+}
+
 /*
 display flex: define um contêiner flexível e que ele controla o layout dos seus itens filhos
 justify-content: center: alinha os itens ao centro horizontalmente
