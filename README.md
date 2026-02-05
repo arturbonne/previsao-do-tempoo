@@ -10,7 +10,7 @@
 - Figma
 
 ## 💻 Projeto
-Projeto dedicado ao estudo e aprefeicoamento em HTML, CSS e Javascript
+Projeto dedicado ao estudo e aperfeicoamento em HTML, CSS e Javascript
 
 ## :memo: Liçença
 Esse projeto está sob a licença de arturbonne.
