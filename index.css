@@ -13,11 +13,11 @@ body{
 /* Container principal */
 #container{
     width:  950px;
-    height: 950px;
+    min-height: 100vh;
     margin: auto; 
 
     border: solid red;
-     border-radius: 40px;
+    border-radius: 40px;
 
 
     display: flex;
@@ -111,7 +111,7 @@ body{
   justify-content: center;
   align-items: center;
 
-  margin: 200px 0;  
+  margin: 100px 0;  
   width: 100%;                                     
  
   
@@ -149,10 +149,27 @@ padding: 10px;
 
     width: 400px;
     height: 200px;
-
-
     
     padding: 10px;
+
+ 
+}
+
+#TempAtualContainer img{
+    height: auto;
+    margin-top: 10px;
+      display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+#climaIcone {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+
 }
 #TempAtualContainer p {
     color: white;

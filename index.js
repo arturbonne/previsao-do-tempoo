@@ -14,6 +14,8 @@ const tempAtual = document.getElementById('tempAtual');
 
 const resultado = document.getElementById('resultado');
 
+const climaIcone = document.getElementById('climaIcone');
+
 // Evento de clique no botão Buscar
 buscarBtn.addEventListener('click', () => {
 
@@ -56,9 +58,37 @@ tempMax.innerText = 26;
 umidade.innerText = 78;
 vento.innerText = 15;
 
-clima.innerText = 'Ensolarado';
+
+
 tempAtual.innerText = '22 °C';
 
+
+clima.innerText = 'clear_day';
+
+
+if (clima.innerText.includes('day')) {
+    climaIcone.src = './clima/clear_day.svg';
+}
+
+else if (clima.innerText.includes('cloudy')) {
+    climaIcone.src = './clima/cloud.svg';
+}
+
+else if (clima.innerText.includes('rain')) {
+    climaIcone.src = './clima/rain.svg';
+}
+
+else if (clima.innerText.includes('storm')) {
+    climaIcone.src = './clima/storm.svg';
+}
+
+else if (clima.innerText.includes('night')) {
+    climaIcone.src = './clima/clear_night.svg';
+}
+
+else {
+    climaIcone.src = './clima/none_day.svg';
+}
 
 }, 2000); // Simular 2 segundos de carregamento
 
