@@ -17,32 +17,36 @@ const resultado = document.getElementById('resultado');
 const climaIcone = document.getElementById('climaIcone');
 
 // Evento de clique no botão Buscar
-buscarBtn.addEventListener('click', () => {
-
+buscarBtn.addEventListener('click', async () => {
+    
 // Colocar texto de cidade digitada
 const cidadeDigitada = cidadeInput.value.trim();
-
-
-// Verificar se o campo está vazio
-if (cidadeDigitada === '') {
     
+    
+// Verificar se o campo está vazio
+ if (cidadeDigitada === '') {
+        
 // Limpar o campo de entrada
-resultado.style.display = 'none';
+ resultado.style.display = 'none';
 return;
-}
-
-// Mostrar tela denovo
-resultado.style.display = 'flex';
-
-// Tela de loading
-loading.style.display = 'block';
-
-// Esconder resultado enquanto carrega
-resultado.style.display = 'none';
-
-// Simular tempo de carregamento
-setTimeout(() => {
-
+   }
+    
+    // Mostrar tela denovo
+    resultado.style.display = 'flex';
+    
+    // Esconder resultado enquanto carrega
+    resultado.style.display = 'none';
+    
+    // Tela de loading
+    loading.style.display = 'block';
+    
+    // Simular busca de dados (substituir com chamada real à API)
+    console.log("Buscando dados...");
+       
+    await new Promise(resolve => setTimeout(resolve, 2000));
+        
+    console.log("Dados recebidos!");
+    
 // Esconder tela de loading
 loading.style.display = 'none';
 
@@ -63,7 +67,7 @@ vento.innerText = 15;
 tempAtual.innerText = '22 °C';
 
 
-clima.innerText = 'clear_day';
+clima.innerText = 'clear';
 
 
 if (clima.innerText.includes('day')) {
@@ -90,7 +94,7 @@ else {
     climaIcone.src = './clima/none_day.svg';
 }
 
-}, 2000); // Simular 2 segundos de carregamento
+
 
 });
 
