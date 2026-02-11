@@ -13,7 +13,7 @@ loading.style.display = 'block';
 
 try {
 
-    const response = await fetch(`SUA_URL_AQUI${cidadeDigitada}`);
+    const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${cidadeDigitada}&appid=1dac2b284374d2c49bdf936d74b534e2&units=metric&lang=pt_br`);
 
     // ✅ AQUI entra o response.ok
     if (!response.ok) {
